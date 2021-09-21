@@ -1,0 +1,424 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(to right, #1b1717, #571340, #64065c);
+  color: white;
+  margin: auto 75px;
+  overflow-x: hidden;
+}
+
+.header {
+  background-image: linear-gradient(to right, #1b1717, #571340, #64065c);
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  padding-left: 75px;
+  padding-right: 30px;
+  margin: auto -75px;
+  width: 95%;
+  position: fixed;
+  z-index: 5;
+}
+
+.logo {
+  font-size: 200%;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  float: left;
+}
+
+.menu_btn {
+  display: none;
+}
+
+.menu_btn:checked~.menu {
+  max-height: 360px;
+}
+
+.menu_btn:checked~.menu_icon .navicon {
+  background: transparent;
+}
+
+.menu_btn:checked~.menu_icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.menu_btn:checked~.menu_icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.menu_btn:checked~.menu_icon:not(.steps) .navicon:before, .menu_btn:checked~.menu_icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+.menu_icon {
+  background-color: #64065c;
+  border: 3px solid #8c30f5;
+  border-radius: 15px;
+  padding: 25px 20px;
+  margin-top: 5px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+  user-select: none;
+}
+
+.navicon {
+  background: #8c30f5;
+  width: 25px;
+  height: 2px;
+  position: relative;
+  display: block;
+  transition: background 0.2s ease-out;
+}
+
+.navicon:before, .navicon:after {
+  content: "";
+  background: #8c30f5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  transition: all 0.2s ease-out;
+}
+
+.navicon:before {
+  top: 5px;
+}
+
+.navicon:after {
+  top: -5px;
+}
+
+.menu {
+  text-align: center;
+  padding: auto;
+  padding-right: 125px;
+  margin: auto;
+  max-height: 0;
+  list-style: none;
+  overflow: hidden;
+  clear: both;
+  transition: max-height 0.2s ease-out;
+}
+
+li>a {
+  font-size: 125%;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  padding: 20px 20px;
+  display: block;
+}
+
+li>a:hover {
+  background-color: #571340;
+  border: 3px solid #8c30f5;
+}
+
+@media (min-width: 768px) {
+  .menu_icon {
+    display: none;
+  }
+  .menu {
+    max-height: none;
+    clear: none;
+    float: right;
+  }
+  li {
+    float: left;
+  }
+  li>a {
+    padding: 20px 30px;
+  }
+}
+
+#div1 {
+  padding-top: 12px;
+  margin-left: 20px;
+}
+
+.d1 {
+  width: 500px;
+  display: inline-block;
+}
+
+.d1>h1 {
+  font-size: 500%;
+  font-weight: 800;
+}
+
+.d1>p {
+  font-size: 175%;
+}
+
+button {
+  font-size: 125%;
+  color: white;
+  background-color: #8c30f5;
+  border: 3px solid #1b1717;
+  border-radius: 15px;
+  padding: 15px 10px;
+  width: 200px;
+}
+
+button:hover {
+  background-color: #571340;
+  border: 3px solid #8c30f5;
+}
+
+.d1>lottie-player {
+  margin-left: 50px;
+  width: 810px;
+  height: 810px;
+}
+
+#div2 {
+  border-top: 1px solid white;
+  margin-left: 10px;
+  margin: 100px auto;
+}
+
+.section {
+  text-align: center;
+}
+
+.section>h1 {
+  font-size: 350%;
+  font-weight: 600;
+}
+
+.section>p {
+  font-size: 175%;
+}
+
+.d2 {
+  margin: auto 35px;
+  width: 400px;
+  display: inline-block;
+}
+
+.d2>img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75px;
+  display: block;
+}
+
+.d2>h2 {
+  font-size: 175%;
+  text-align: center;
+  color: #8c30f5;
+}
+
+.d2>p {
+  font-size: 150%;
+  text-align: justify;
+}
+
+#email {
+  color: white;
+}
+
+#div3 {
+  border-top: 1px solid white;
+  margin-left: 50px;
+  margin: 100px auto;
+}
+
+.d3 {
+  text-align: center;
+  background-color: #1b1717;
+  border: 5px solid #8c30f5;
+  border-radius: 25px;
+  padding: 20px;
+  margin: auto 60px;
+  width: 300px;
+  height: 425px;
+  display: inline-block;
+}
+
+.d3>h2 {
+  font-size: 195%;
+  font-weight: 600;
+}
+
+.d3>h4 {
+  font-size: 175%;
+  font-weight: 500;
+  color: rgb(241, 204, 241);
+}
+
+#div4 {
+  border-top: 1px solid white;
+  margin-left: 20px;
+  margin: 100px auto;
+}
+
+.d4 {
+  width: 650px;
+  display: inline-block;
+}
+
+#bank {
+  margin-right: 90px;
+  margin-left: 30px;
+}
+
+.d4>h1 {
+  font-size: 275%;
+  font-weight: 650;
+  margin-bottom: 50px;
+}
+
+.flags {
+  margin-right: 25px;
+  margin-bottom: 25px;
+  width: 85px;
+}
+
+#globe {
+  margin-right: 20px;
+  margin-bottom: -20px;
+  width: 65px;
+}
+
+#div5 {
+  border-top: 1px solid white;
+  margin-left: 20px;
+  margin: 100px auto;
+}
+
+#dash {
+  margin-bottom: auto;
+}
+
+#g1 {
+  margin-left: 15px;
+  margin-bottom: 75px;
+  width: 1500px;
+}
+
+#g2 {
+  margin-left: 15px;
+  margin-bottom: 75px;
+  width: 1405px;
+}
+
+#div6 {
+  border-top: 1px solid white;
+  margin-left: 20px;
+  margin: 100px auto;
+}
+
+.d6 {
+  margin-left: 30px;
+  width: 670px;
+  display: inline-block;
+}
+
+.d6>p {
+  font-size: 160%;
+  text-align: justify;
+}
+
+.d6>h3 {
+  font-size: 160%;
+  color: white;
+}
+
+#test {
+  width: 780px;
+}
+
+.d6>img {
+  border: 3px solid #8c30f5;
+  border-radius: 125px;
+  margin-left: 250px;
+}
+
+footer {
+  background-color: #1b1717;
+  border-top: 1px solid white;
+  padding-left: 100px;
+  padding-bottom: 5px;
+  margin: auto -75px;
+}
+
+.footer {
+  width: 270px;
+  display: inline-block;
+}
+
+.footer>img {
+  margin-bottom: 8px;
+  width: 175px;
+}
+
+.footer>p {
+  font-size: 125%;
+}
+
+.icon {
+  margin-left: -10px;
+}
+
+.icon>span {
+  margin: auto 10px;
+}
+
+.footer>h4 {
+  font-size: 135%;
+}
+
+.store {
+  background-color: #1b1717;
+  border: 3px solid white;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 25px 0px;
+  width: 175px;
+}
+
+.store>img, .store>span {
+  margin: auto 5px;
+}
+
+.store>span {
+  font-size: 75%;
+}
+
+.store:hover {
+  background-color: #571340;
+}
+
+#footer>p {
+  font-size: 125%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  #headline, #matrix, #bank, #client, #flogo, #icon {
+    display: none;
+  }
+  .header {
+    padding: 0px;
+    margin-left: -65px;
+  }
+  .menu {
+    padding-right: 0px;
+  }
+  .section, .d1, .d2, .para, .d3, .d4, .d6, #test, .footer, #footer {
+    text-align: center !important;
+    margin: 20px auto;
+    width: 100%;
+  }
+  footer {
+    padding-left: 0px;
+  }
+  #g1, #g2 {
+    width: 100%;
+  }
+  .store {
+    margin-right: 5px;
+    display: inline-block;
+  }
+}
